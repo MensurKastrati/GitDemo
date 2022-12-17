@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Loan Department">
+    <listeners>
+        <listener class-name="TestNgTutorial.Intro.Listeners"></listener>
+    </listeners>
+    
+    <test name = "Personal Loan">
+        <classes>
+            <class name="TestNgTutorial.Intro.Day1">
+                <methods>
+                    <include name="Demo"/>
+                </methods>
+            </class>
+            <class name="TestNgTutorial.Intro.Day2"/>
+            <class name="TestNgTutorial.Intro.Day4"/>
+        </classes>
+    </test>
+    <test name="Car Loan">
+        <classes>
+            <class name="TestNgTutorial.Intro.Day3">
+                <methods>
+                    <exclude name="Mobile.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
